@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfDependencyInjectionExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDependencyInjectionExample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" x:ClassModifier="internal"
+        d:DataContext="{d:DesignInstance local:MainWindowViewModel}">
+    <StackPanel>
+        <TextBlock Text="I'm reactive!" Background="LightYellow" />
+
+        <ListView ItemsSource="{Binding Fancies, Mode=OneTime}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Id, Mode=OneTime}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- Some Child View -->
+        <local:SubMainView />
+    </StackPanel>
+</Window>

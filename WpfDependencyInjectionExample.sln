@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDependencyInjectionExample", "WpfDependencyInjectionExample\WpfDependencyInjectionExample.csproj", "{0F4D4B13-6390-47E7-B899-AE7AFC37D699}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F4D4B13-6390-47E7-B899-AE7AFC37D699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4D4B13-6390-47E7-B899-AE7AFC37D699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4D4B13-6390-47E7-B899-AE7AFC37D699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4D4B13-6390-47E7-B899-AE7AFC37D699}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
